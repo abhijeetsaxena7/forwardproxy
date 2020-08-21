@@ -18,7 +18,7 @@ import org.springframework.web.client.RestTemplate;
 public class RequestHandler {
 	
 	@RequestMapping(value = "/proxy", produces = {MediaType.TEXT_HTML_VALUE})
-	public ResponseEntity<String> fullTextRequestHandler(@RequestParam String fullTextString) {
+	public ResponseEntity<String> requestHandler(@RequestParam String fullTextString) {
 		
 		RestTemplate restTemp = new RestTemplate();
 		
